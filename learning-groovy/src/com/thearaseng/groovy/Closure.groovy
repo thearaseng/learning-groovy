@@ -19,3 +19,14 @@ def callClosure(closure) {
 }
 
 callClosure closure2
+
+//******************************************************************
+
+def myList = ['Apple', 'Orange', 'Grapes']
+println myList.each { it }
+
+def myMap = [
+        'subject':'groovy',
+        'topic':'closure'
+]
+println myMap.each { it }
