@@ -1,0 +1,21 @@
+package com.thearaseng.groovy
+
+def outsideClosure = 'Hello'
+
+def closure = { name -> println "${outsideClosure}, ${name}" }
+closure.call('Theara')
+
+//******************************************************************
+def closure2 = {
+    name,question ->
+    println "${outsideClosure}, ${name}. ${question}"
+}
+
+closure2.call'Theara', 'How are you?'
+
+//******************************************************************
+def callClosure(closure) {
+    closure.call 'Theara', 'This closure is called in method'
+}
+
+callClosure closure2
